@@ -193,7 +193,7 @@ margin: 10px;
 border: 2px solid rgb(54, 53, 53);
 }
 
-@media screen and (max-width:1023px) {
+/* @media screen and (max-width:1023px) {
   .front_card .card_container img,.front_card,.back_card img,.back_card{
       width: 300px;
   }
@@ -236,4 +236,4 @@ border: 2px solid rgb(54, 53, 53);
       margin-top: 6rem;
   }
   
-}
+} */
