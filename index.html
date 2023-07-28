@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+
+  
+    <div class="container">
+        <div class="round-img">
+                
+        </div>
+        <div class="round-img-mini">
+
+        </div>
+        <h2 class="number" id="cardNum">0000 0000 0000 0000</h2>
+        <p class="name" id="name">christian jones</p>
+        <p class="cvc" id="cvc" >000</p>
+<div class="date">
+    <span id="month">00</span>
+        <span id="slash">/</span>
+        <span id="year">00</span>
+        
+</div>
+        
+        <div class="image-container">
+           
+            <img src="images/bg-card-front.png" alt="" srcset="">
+            <img src="images/bg-card-back.png" alt="" srcset="">
+        </div>
+        <div class="user-input">
+            <p class="hidden"  id="error">Fill All Fields</p>
+
+            <form action="#">
+            <h1>Credit Card</h1>
+
+<label for="">Card Name: </label>
+<input type="text" name="" id="InptName" placeholder="eg. christian jones">
+<label for="">Card Number: </label>
+<input type="text" name="" id="InptcardNum" placeholder="eg. 1234 5678 9123 0000" minlength="16" maxlength="16">
+<label for="">Exp. Date (MM/YY): </label> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+
+<label for="">CVC: </label>
+
+
+<div class="exp">
+    <input type="text" name="" id="exp1" class="exp" placeholder="MM" maxlength="2">
+    <input type="text" name="" id="exp2" class="exp" placeholder="YY" maxlength="2">
+    <input type="text" name="" id="exp3" class="exp" placeholder="eg. 123" maxlength="3">
+
+</div>
+<center></center>
+<button onclick="Thanks()">Continue</button>
+        </div>
+
+        <div class="thank hidden" id="thanks">
+            <img src="images/icon-complete.svg" alt="Completed" />
+            <h1>Thank you!</h1>
+            <p>We've added your card details</p>
+        
+          </div>
+    </div>
+</div>
+</form>
+
+
+<script src="script.js"></script>
+</body>
+</html>

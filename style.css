@@ -1,0 +1,239 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Montserrat', Arial;
+background-repeat: no-repeat;  
+background-size: cover;
+
+}
+.bg{
+    width: 500px;
+    height: 100%;
+    background-color: rgb(129, 129, 129);
+    box-shadow: 4px 4px 8px rgba(221, 79, 79, 0.2);
+
+}
+img{
+    margin-top: 10px;
+}
+h1{
+    color: rgb(90, 82, 82);
+    margin-left: 10px;
+    
+}
+  
+  .container{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-evenly;
+    position: absolute;
+  }
+  label{
+    margin: 10px;
+    /* font-weight: bolder; */
+    color: rgb(70, 68, 68);
+
+  }
+  .user-input input{
+display: flex;
+padding: 10px;
+width: 350px;
+margin: 10px;
+outline: none;
+font-size: 1.2rem;
+/* border: 0px; */
+  }
+  input{
+    /* box-shadow: 1px 1px 1px rgba(92, 91, 91, 0.6); */
+    font-size: 2rem;
+
+  }
+  .user-input{
+    margin-top: 50px;
+  }
+  .image-container img{
+    display: block;
+
+  }
+  .user-input {
+margin-left: 50px;
+
+  }
+  .image-container {
+    margin-right: 20px;
+
+  }
+  .exp{
+    display: flex   ;
+  }
+  #exp1, #exp2, #exp3{
+    width: 88px;
+  }
+
+
+  .number{
+margin-left: 300px;
+bottom: 300px;
+position: absolute;
+left: -270px;
+color: white;
+font-size: 2rem;
+  }
+  .name{
+    margin-left: 300px;
+    bottom: 260px;
+    position: absolute;
+    left: -270px;
+    color: white;
+    font-size: 1.0rem;
+
+  }
+  
+  .cvc{
+
+    margin-left: 300px;
+    bottom: 93px;
+    position: absolute;
+    left: 50px;
+    color: white;
+    font-size: 1.2rem;
+
+  }
+
+  input[type="button"]{
+    width: 376px;
+
+  }
+  .round-img{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+  }
+  .round-img-mini{
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+
+  }
+  span{
+    /* position: absolute; */
+    
+  }
+  .date{
+    margin-left: 300px;
+    bottom: 93px;
+    position: absolute;
+    left:50px;
+    color: white;
+    font-size: 1.2rem;
+    display: flex ;
+    width: 100px;
+    top: 210px;
+  }
+  .thank h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.thank p{
+    font-size: 18px;
+    /* color: var(--Dark-grayish-violet); */
+}
+.thank{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#thanks{
+  position: absolute;
+  left: 500px;
+  top: 70px;
+}
+.hidden{
+  display: none !important;
+}
+.error{
+color: rgb(230, 53, 53);
+font-size: 1rem;
+margin: 5px;
+font-weight: 400;
+
+}
+
+button{
+  padding: 12px;
+  width: 376px;
+  background-color: rgb(41, 41, 104);
+border-radius: 5px;
+color: white;
+font-size: 1.2rem;
+margin: 10px;
+border: 2px solid rgb(54, 53, 53);
+}
+
+@media screen and (max-width:1023px) {
+  .front_card .card_container img,.front_card,.back_card img,.back_card{
+      width: 300px;
+  }
+  .card_logo{
+      width: 50px;
+  }
+  #number{
+      font-size: 1.1rem;
+  }
+  #cvc{
+      top: 42%;
+      right: 12%;
+  }
+}
+@media screen and (max-width:767px) {
+  .container{
+      flex-direction: column;
+  }
+  .front_card .card_container img,.front_card,.back_card img,.back_card{
+      width: 280px;
+  }
+  .left_section{
+      width: 100%;
+      min-height: 30vh;
+      background-image: url('./images/bg-main-mobile.png');
+  }
+  .cards{
+      flex-direction: column-reverse;
+      left: 61%;
+      top: 60%;
+      gap: 0;
+  }
+  .back_card{
+      transform: translateY(70px);
+  }
+  .front_card{
+      z-index: 100;
+  }
+  .right_section{
+      margin-top: 6rem;
+  }
+  
+}
